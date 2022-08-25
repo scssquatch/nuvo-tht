@@ -13,13 +13,13 @@ class Board
     # generate all cells, insert into cells object with coords as keys, state as value
     (1..width).each do |x|
       (1..height).each do |y|
-        # set_cell_state(x, y, get_random_state)
+        set_cell_state(x, y, get_random_state)
         # if x == 5 && y == 1 || x == 5 && y == 3 || x == 5 && y == 3 # Oscillator
-        if x == 5 && y == 1 || x == 5 && y == 3 || x == 6 && y == 2 || x == 4 && y == 3 || x == 6 && y == 3 # Glider
-          set_cell_state(x, y, true)
-        else
-          set_cell_state(x, y, false)
-        end
+        # if x == 5 && y == 1 || x == 5 && y == 3 || x == 6 && y == 2 || x == 4 && y == 3 || x == 6 && y == 3 # Glider
+        #   set_cell_state(x, y, true)
+        # else
+        #   set_cell_state(x, y, false)
+        # end
       end
     end
   end
